@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="./bootstrap.css">
+    <script src="./jquery.js"></script>
+    <script src="./bootstrap.js"></script>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- navbar導覽工具列 -->
+        <img src="./img/logo01.png" style="width: 50px;height: auto;">
+        <a class="navbar-brand" href="">Home</a>
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="News.html">News</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Business.html">Business</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Tickets.html">Tickets</a>
+            </li>
+        </ul>
+    </nav>
+    
+    <main class="p-5">
+        <div id="slider" class="carousel slide w-75 m-auto" data-ride="carousel">
+            
+        
+            <ol class="carousel-indicators">
+                <li data-target="#slider" data-slide="0" class="active"></li>
+                <li data-target="#slider" data-slide="1" ></li>
+                <li data-target="#slider" data-slide="2"></li>
+                <li data-target="#slider" data-slide="3"></li>
+                <li data-target="#slider" data-slide="4"></li>
+                
+               
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/slide-01.png" class="d-block w-100" style="height: 300px;" alt="">
+                    <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                </div>
+            </div>
+                <div class="carousel-item">
+                    <img src="./img/slide-02.png" class="d-block w-100" style="height: 300px;" alt="">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/slide-03.png" class="d-block w-100" style="height: 300px;" alt="">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                <img src="./img/slide-04.png" class="d-block w-100" style="height: 300px;" alt="">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                </div>
+            </div>
+                
+            </div>
+        <a class="carousel-control-prev" role="button" href="#slider" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" role="button" href="#slider" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+        
+    </div>
+    </main>
+
+    <div style="background-color: antiquewhite;border: 3px;border-radius: 10px;width: 500px;height: 170px;padding: 10px;margin: 10px;border: 4px solid black;">
+        <h1 style="text-align: center;">活動資訊</h1>
+        <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto dolores tempora praesentium, fugiat dicta distinctio iusto saepe, error nisi et esse iste ipsam soluta odit, dolorem minus laboriosam. Dicta, reprehenderit!</p>
+    </div>
+
+    
+
+    <!-- footer頁腳 -->
+    <footer class="d-flex flex-column justify-content-center align-items-center fixed-bottom pb-2">
+        <!-- fixed-bottom(固定到下方) -->
+         <!-- justify-content-center、align-items-center 垂直置中 -->
+        <div class="d-flex justify-content-center align-items-center" style="width: 100%;">
+        <img src="./img/icon_facebook.png" class="img" style="border: 3px solid red;margin: 3px;border-radius: 50px;">
+        <img src="./img/icon_instagram.png" class="img" style="border: 3px solid red;margin: 3px;border-radius: 50px;">
+        <img src="./img/icon_twtter.png" class="img" style="border: 3px solid red;margin: 3px;border-radius: 50px;">
+        <img src="./img/icon_youtube.png" class="img" style="border: 3px solid red;margin: 3px;border-radius: 50px;">
+        <img src="./img/github icon.png" class="img" style="border: 3px solid red;margin: 3px;border-radius: 50px;">
+        </div>
+        Copyright	&copy; 2024 FIBEX All	Rights	Reserved
+    </footer>
+</body>
+
+
+<script>
+    let time = setInterval(() => {
+        $(".carousel-control-next").click();
+    }, 2000)
+    console.log(carousel-control-next)
+</script>
+</html>

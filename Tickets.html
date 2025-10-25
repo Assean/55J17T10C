@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tickets</title>
+    <title>home</title>
+    <link rel="stylesheet" href="./bootstrap.css">
+    <script src="./jquery.js"></script>
+    <script src="./bootstrap.js"></script>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- navbar導覽工具列 -->
+        <img src="./img/logo01.png" style="width: 50px;height: auto;">
+        <a class="navbar-brand" href="">Tickets</a>
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="News.html">News</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Business.html">Business</a>
+            </li>
+            <li class="nav-item  active">
+                <a class="nav-link" href="Tickets.html">Tickets</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="d-flex justify-content-center align-items-center">
+        <form action="Tickets.php" class="card p-2" method="post"
+            style="width: 500px;height:700px auto;border:  2px solid;background-color: antiquewhite;">
+            <div class="row p-2">
+                <div class="col">
+                    <p>
+                        <label for="Firstname">First name</label>
+                        <input type="text" class="form-control Firstname" name="Firstname" value="" id="Firstname" placeholder="First name">
+                    </p>
+                </div>
+                <div class="col">
+                    <p>
+                        <label for="Lastname">Last name</label>
+                        <input type="text" class="form-control Lastname" name="Lastname" value="" id="Lastname" placeholder="Lastname">
+                    </p>
+                </div>
+            </div>
+            <hr style="border: 2px solid;">
+                <div>
+                    <p>
+                        <label for="Phone">Phone</label>
+                        <input type="text" class="form-control Phone" name="Phone" value="" id="Phone" placeholder="Phone">
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        <label for="Phone">Password</label>
+                        <input type="text" class="form-control Password" name="Password" value="" id="Password" placeholder="Password">
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        <label for="Phone">驗證碼</label>
+                        <input type="text" class="form-control" name="Verify_image" value="" id="Verify_image"  disabled>
+                        <input type="text" class="form-control" name="Verify_ans" value="" id="Verify_ans"  hidden>
+                    </p>
+                </div>
+                <p>
+                    <label for="Verification">Verification</label>
+                    <input type="text" class="form-control Verification" id="Verification" id="" name="Verification"
+                        placeholder="Verification">
+                </p>
+                <p class="d-flex justify-content-center align-items-center">
+                    <span class="btn btn-info" class="reset" style="border: 2px solid black;padding: 2px;margin: 2px;font-size: 20px;text-align: center;transition-duration: 700ms;">Reset</span>
+                    <input class="submit" type="Submit" value="Submit" style="border: 2px solid black;font-size: 20px;padding: 2px;margin: 2px;border-radius: 5px;background-color: rgb(238, 128, 128);text-align: center;transition-duration: 700ms;";">
+                </p>
+        </form>
+    </div>
+
+
+    <!-- footer頁腳 -->
+    <footer class="d-flex flex-column justify-content-center align-items-center fixed-bottom pb-2">
+        <!-- fixed-bottom(固定到下方) -->
+        <!-- justify-content-center、align-items-center 垂直置中 -->
+        <div class="d-flex justify-content-center align-items-center" style="width: 100%;">
+            <img src="./img/icon_facebook.png" class="img"
+                style="border: 3px red solid;margin: 3px;border-radius: 50px;">
+            <img src="./img/icon_instagram.png" class="img"
+                style="border: 3px red solid;margin: 3px;border-radius: 50px;">
+            <img src="./img/icon_twtter.png" class="img" style="border: 3px red solid;margin: 3px;border-radius: 50px;">
+            <img src="./img/icon_youtube.png" class="img"
+                style="border: 3px red solid;margin: 3px;border-radius: 50px;">
+            <img src="./img/github icon.png" class="img" style="border: 3px red solid;margin: 3px;border-radius: 50px;">
+        </div>
+        Copyright &copy; 2024 FIBEX All Rights Reserved
+    </footer>
+</body>
+<script>
+let verfiy = "";
+let verfiy_ans = document.getElementById("Verify_ans");
+let verfiy_image = document.getElementById("Verify_image");
+console.log(verfiy_ans)
+console.log(verfiy_image)
+
+verfiy = String(Math.floor(Math.random()*10)) + String(Math.floor(Math.random()*10)) + String(Math.floor(Math.random()*10)) + String(Math.floor(Math.random()*10));
+// console.log(Math.floor)
+
+verfiy_image.value=verfiy
+verfiy_ans.value=verfiy
+</script>
+</html>
+
